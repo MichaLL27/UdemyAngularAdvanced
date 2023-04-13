@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+
 import {COURSES} from '../db-data';
 
 @Component({
@@ -7,6 +8,10 @@ import {COURSES} from '../db-data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+course = COURSES[0];
+desc = COURSES[0].description
+
+
 
 
 
